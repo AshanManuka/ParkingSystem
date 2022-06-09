@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="context" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InterfaceFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c8d8e8" height="34.0" layoutX="6.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="588.0" />
+      <Text layoutX="28.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saman Rice Car Park">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="23.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Vehicle :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="vNumberBox" layoutX="140.0" layoutY="92.0" prefHeight="28.0" prefWidth="166.0" promptText="WP XXX XXXX" />
+      <Text layoutX="23.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle Type :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="23.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Driver :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="dNameBox" layoutX="140.0" layoutY="192.0" prefHeight="28.0" prefWidth="166.0" promptText="Name" />
+      <Label layoutX="62.0" layoutY="259.0" prefHeight="34.0" prefWidth="189.0" text="Your Parking Slot">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="parkingSlot" layoutX="108.0" layoutY="300.0" prefHeight="62.0" prefWidth="117.0">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <Button fx:id="parkbtn" layoutX="358.0" layoutY="156.0" mnemonicParsing="false" onAction="#parkVehiclebtn" prefHeight="44.0" prefWidth="223.0" text="Park Vehicle">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="diliverbtn" layoutX="358.0" layoutY="217.0" mnemonicParsing="false" onAction="#diliveryShiftbtn" prefHeight="44.0" prefWidth="223.0" text="On Dilivery Shift">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="311.0" layoutY="330.0" mnemonicParsing="false" onAction="#managementLoginbtn" prefHeight="44.0" prefWidth="271.0" text="Management Log In">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="dtlbl" layoutX="363.0" layoutY="61.0" prefHeight="28.0" prefWidth="213.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="dtlbl2" layoutX="365.0" layoutY="104.0" prefHeight="20.0" prefWidth="213.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="vTypelbl" layoutX="140.0" layoutY="149.0" prefHeight="28.0" prefWidth="166.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

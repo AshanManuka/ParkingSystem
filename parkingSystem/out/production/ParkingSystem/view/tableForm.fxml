@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="context" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TableFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bfdbf5" height="31.0" layoutX="14.0" layoutY="8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="574.0" />
+      <Text layoutX="33.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parking Table">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Text>
+      <Button layoutX="14.0" layoutY="48.0" mnemonicParsing="false" onAction="#onDiliveryTable" prefHeight="25.0" prefWidth="91.0" text="On Dilivery">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="284.0" layoutY="48.0" mnemonicParsing="false" onAction="#addVehiclebtn" prefHeight="25.0" prefWidth="91.0" text="Add Vehicle">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="392.0" layoutY="48.0" mnemonicParsing="false" onAction="#addDriverbtn" prefHeight="25.0" prefWidth="91.0" text="Add Driver">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="496.0" layoutY="47.0" mnemonicParsing="false" onAction="#logOutbtn" prefHeight="25.0" prefWidth="91.0" text="Log Out">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblParking" layoutX="14.0" layoutY="86.0" prefHeight="303.0" prefWidth="574.0">
+        <columns>
+          <TableColumn fx:id="pVehicleNumber" prefWidth="153.0" text="Vehicle Number" />
+          <TableColumn fx:id="pVehicleType" prefWidth="129.0" text="Vehicle Type" />
+            <TableColumn fx:id="pSlot" prefWidth="114.0" text="Parking Slot" />
+            <TableColumn fx:id="pTime" prefWidth="177.0" text="Parked Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
